@@ -2,7 +2,7 @@
 
 require_once("mysqlConnection.php");
 
-$sql = "SELECT * FROM Oivallukset";
+$sql = "SELECT * FROM oivallus";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
