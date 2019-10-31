@@ -38,7 +38,7 @@ require_once("mysqlConnection.php");
 
 <?php
 
-include("mysqlConnection.php");
+include("listaa_oivallus.php");
 
 ?>
 
