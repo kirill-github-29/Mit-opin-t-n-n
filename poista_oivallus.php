@@ -18,8 +18,12 @@ if(isset($_GET['id'])){
     }
 }
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
-
 $conn->close();
+
+/*
+    Ohjataan käyttäjä takaisin suvustolle
+*/
+
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>

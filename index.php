@@ -1,5 +1,10 @@
 <?php
 
+/*
+    Yhdistetään tietokantaan käyttäen eri tiedostoa
+    https://www.w3schools.com/php/php_includes.asp
+*/
+
 require_once("mysqlConnection.php");
 
 ?>

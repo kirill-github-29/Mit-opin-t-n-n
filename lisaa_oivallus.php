@@ -17,6 +17,10 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
+/*
+    Ohjataan käyttäjä takaisin suvustolle
+*/
+
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>
