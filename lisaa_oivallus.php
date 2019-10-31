@@ -21,6 +21,6 @@ $conn->close();
     Ohjataan käyttäjä takaisin suvustolle
 */
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+header("Location: index.html");
 
 ?>
