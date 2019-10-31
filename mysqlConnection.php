@@ -1,6 +1,11 @@
 <?php
 
-/* Azure in APP MySQL */
+/*
+  Haetaan Azure in APP MySQL connection string
+  https://www.eliostruyf.com/moving-your-database-to-the-mysql-in-app-option-in-azure/
+*/ 
+
+/*  */
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -16,6 +21,11 @@ foreach ($_SERVER as $key => $value) {
   $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
   $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
+
+/*
+  Yhdistetään MYSQL tietokantaan
+  https://www.w3schools.com/php/php_mysql_connect.asp
+*/ 
 
 // Create connection
 $conn = new mysqli($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword, $connectstr_dbname);

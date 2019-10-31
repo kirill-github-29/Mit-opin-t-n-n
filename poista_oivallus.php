@@ -1,5 +1,10 @@
 <?php
 
+/*
+    Poistetaan oivallus tietokannasta
+    https://www.w3schools.com/php/php_mysql_delete.asp
+*/
+
 require_once("mysqlConnection.php");
 
 if(isset($_GET['id'])){

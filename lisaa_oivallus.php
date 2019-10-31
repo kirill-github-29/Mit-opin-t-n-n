@@ -1,5 +1,10 @@
 <?php
 
+/*
+    Lisätään uusi oivallus tietokantaan
+    https://www.w3schools.com/php/php_mysql_insert.asp
+*/
+
 require_once("mysqlConnection.php");
 
 $sql = "INSERT INTO oivallus (paiva, oivallus) VALUES ('" . date("d.m.Y") . "', '" . mysqli_real_escape_string($conn, $_POST['lisaa_uusi_oivallus']) . "')";

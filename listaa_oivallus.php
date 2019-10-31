@@ -1,5 +1,10 @@
 <?php
 
+/*
+    Haetaan tietokannasta oivallukset
+    https://www.w3schools.com/php/php_mysql_select.asp
+*/
+
 require_once("mysqlConnection.php");
 
 $sql = "SELECT * FROM oivallus";
