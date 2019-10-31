@@ -1,3 +1,9 @@
+<?php
+
+require_once("mysqlConnection.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +22,7 @@
             <h1 class="p-3">Mitä opin tänään</h1>
         </div>
         <div class="lisaa_uusi mt-4">
-            <form action="/lisaa_oivallus.php">
+            <form action="lisaa_oivallus.php" method="post">
                 <input type="text" name="lisaa_uusi_oivallus"></input>
                 <input type="submit" value="Lisää uusi">
             </form>
@@ -29,16 +35,13 @@
                     <th>Poista</th>
                 </tr>
                 <tbody>
-                    <tr>
-                        <td>31.10.2019</td>
-                        <td>Lorem ipsum</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>31.10.2019</td>
-                        <td>Lorem ipsum</td>
-                        <td>X</td>
-                    </tr>
+
+<?php
+
+include("mysqlConnection.php");
+
+?>
+
                 </tbody>
             </table>
         </div>
