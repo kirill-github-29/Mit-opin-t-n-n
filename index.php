@@ -24,7 +24,7 @@ require_once("mysqlConnection.php");
 <body class="bg-dark text-white">
     <div class="container">
         <div class="otsikko bg-secondary mt-4 rounded">
-            <h1 class="p-3">Mitä opin tänään</h1>
+            <h1 class="p-3">Mitä opin tänään?</h1>
         </div>
         <div class="lisaa_uusi mt-4">
             <form action="lisaa_oivallus.php" method="post">
